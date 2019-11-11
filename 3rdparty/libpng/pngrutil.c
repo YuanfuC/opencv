@@ -182,7 +182,7 @@ png_read_chunk_header(png_structrp png_ptr)
    png_check_chunk_name(png_ptr, png_ptr->chunk_name);
 
    /* Check for too-large chunk length */
-   png_check_chunk_length(png_ptr, length);
+   hcop_png_check_chunk_length(png_ptr, length);
 
 #ifdef PNG_IO_STATE_SUPPORTED
    png_ptr->io_state = PNG_IO_READING | PNG_IO_CHUNK_DATA;
@@ -3151,7 +3151,7 @@ png_check_chunk_name(png_const_structrp png_ptr, const png_uint_32 chunk_name)
 }
 
 void /* PRIVATE */
-png_check_chunk_length(png_const_structrp png_ptr, const png_uint_32 length)
+hcop_png_check_chunk_length(png_const_structrp png_ptr, const png_uint_32 length)
 {
    png_alloc_size_t limit = PNG_UINT_31_MAX;
 

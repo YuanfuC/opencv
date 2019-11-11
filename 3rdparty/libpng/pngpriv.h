@@ -1536,7 +1536,7 @@ PNG_INTERNAL_FUNCTION(void,png_handle_zTXt,(png_structrp png_ptr,
 PNG_INTERNAL_FUNCTION(void,png_check_chunk_name,(png_const_structrp png_ptr,
     const png_uint_32 chunk_name),PNG_EMPTY);
 
-PNG_INTERNAL_FUNCTION(void,png_check_chunk_length,(png_const_structrp png_ptr,
+PNG_INTERNAL_FUNCTION(void,hcop_png_check_chunk_length,(png_const_structrp png_ptr,
     const png_uint_32 chunk_length),PNG_EMPTY);
 
 PNG_INTERNAL_FUNCTION(void,png_handle_unknown,(png_structrp png_ptr,
